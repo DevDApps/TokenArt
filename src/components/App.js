@@ -1,4 +1,4 @@
-import Decentragram from '../abis/Decentragram.json'
+import EdCert from '../abis/EdCert.json'
 import React, { Component } from 'react';
 import Identicon from 'identicon.js';
 import Navbar from './Navbar'
@@ -37,26 +37,23 @@ class App extends Component {
     this.setState({ account: accounts[0] })
     // Network ID
     const networkId = await web3.eth.net.getId()
-    const networkData = Decentragram.networks[networkId]
+    const networkData = EdCert.networks[networkId]
     if(networkData) {
-      const decentragram = new web3.eth.Contract(Decentragram.abi, networkData.address)
-      this.setState({ decentragram })
-      const imagesCount = await decentragram.methods.imageCount().call()
+      const edCert = new web3.eth.Contract(EdCert.abi, networkData.address)
+      this.setState({ edCert })
+      const imagesCount = await edCert.methods.imageCount().call()
       this.setState({ imagesCount })
       // Load images
       for (var i = 1; i <= imagesCount; i++) {
-        const image = await decentragram.methods.images(i).call()
+        const image = await edCert.methods.images(i).call()
         this.setState({
           images: [...this.state.images, image]
         })
       }
-      // Sort images. Show highest tipped images first
-      this.setState({
-        images: this.state.images.sort((a,b) => b.tipAmount - a.tipAmount )
-      })
+
       this.setState({ loading: false})
     } else {
-      window.alert('Decentragram contract not deployed to detected network.')
+      window.alert('EdCert contract not deployed to detected network.')
     }
   }
 
@@ -68,12 +65,11 @@ class App extends Component {
     reader.readAsArrayBuffer(file)
 
     reader.onloadend = () => {
-      this.setState({ buffer: Buffer(reader.result) })
-      console.log('buffer', this.state.buffer)
-    }
+         this.setState({ buffer: Buffer(reader.result) })
+    console.log('buffer', this.state.buffer)  }
   }
 
-  uploadImage = description => {
+  uploadImage = student => {
     console.log("Submitting file to ipfs...")
 
     //adding file to the IPFS
@@ -85,31 +81,55 @@ class App extends Component {
       }
 
       this.setState({ loading: true })
-      this.state.decentragram.methods.uploadImage(result[0].hash, description).send({ from: this.state.account }).on('transactionHash', (hash) => {
-        this.setState({ loading: false })
+      this.state.edCert.methods.uploadImage(result[0].hash, student).send({ from: this.state.account }).on('transactionHash', (hash) => {
+      this.setState({ loading: false })
+      // refresh 
+      window.location.reload(false);
       })
     })
   }
 
-  tipImageOwner(id, tipAmount) {
-    this.setState({ loading: true })
-    this.state.decentragram.methods.tipImageOwner(id).send({ from: this.state.account, value: tipAmount }).on('transactionHash', (hash) => {
-      this.setState({ loading: false })
-    })
+  getValueInput = event => {
+      event.preventDefault()
+      const searchValue = event.target.value
+      const last = this.state.userSearchFilter
+
+      this.setState({ userSearchFilterLast: this.state.userSearchFilter })
+      this.setState({ userSearchFilter: searchValue })
+
+      console.log("in getValueInput, last value =  ",  last)
+      this.filterNames(searchValue)
+
+      this.setState({ userSearchFilterLast: searchValue })
+      if (searchValue == "" || last.length > searchValue.length)
+        window.location.reload(false);
   }
+
+  filterNames (searchValue) {
+      const { images } = this.state
+      console.log("in filterNames searchValue = ", searchValue)
+      this.setState({
+        images: images.filter(x => x.student.includes(searchValue))
+      })
+
+  }
+
 
   constructor(props) {
     super(props)
     this.state = {
       account: '',
-      decentragram: null,
+      edCert: null,
       images: [],
+      userSearchFilter: "",
+      userSearchFilterLast: "",
       loading: true
     }
 
     this.uploadImage = this.uploadImage.bind(this)
-    this.tipImageOwner = this.tipImageOwner.bind(this)
     this.captureFile = this.captureFile.bind(this)
+    this.filterNames = this.filterNames.bind(this);
+    this.getValueInput = this.getValueInput.bind(this);
   }
 
   render() {
@@ -122,7 +142,8 @@ class App extends Component {
               images={this.state.images}
               captureFile={this.captureFile}
               uploadImage={this.uploadImage}
-              tipImageOwner={this.tipImageOwner}
+              filterNames={this.filterNames}
+              getValueInput={this.getValueInput}
             />
         }
       </div>

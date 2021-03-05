@@ -1,5 +1,5 @@
-const Decentragram = artifacts.require("Decentragram");
+const EdCert = artifacts.require("EdCert");
 
 module.exports = function(deployer) {
-  deployer.deploy(Decentragram);
+  deployer.deploy(EdCert);
 };
