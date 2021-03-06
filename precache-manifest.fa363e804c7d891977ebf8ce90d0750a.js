@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "190aa1b41cf451dd18ff744cb2a81431",
+    "revision": "68e13da5403de16d563f5af1bac2d6ca",
     "url": "/EdCert/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/EdCert/static/css/2.80dce9aa.chunk.css"
   },
   {
-    "revision": "be75389ba6a44cb2334b",
+    "revision": "1593ccd019883d0c18fd",
     "url": "/EdCert/static/css/main.18de8aef.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/EdCert/static/js/2.fd9417dd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "be75389ba6a44cb2334b",
-    "url": "/EdCert/static/js/main.1c447867.chunk.js"
+    "revision": "1593ccd019883d0c18fd",
+    "url": "/EdCert/static/js/main.05ba35fc.chunk.js"
   },
   {
     "revision": "ec6a6a237446ca43952a",
