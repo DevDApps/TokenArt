@@ -3,8 +3,6 @@ import Identicon from 'identicon.js';
 
 class Main extends Component {
 
-
-
   render() {
     return (
 
@@ -82,10 +80,6 @@ class Main extends Component {
                   </div>
                 )
               })}
-
-
-
-
 
             </div>
           </main>

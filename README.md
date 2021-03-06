@@ -1,1 +1,1 @@
-## ```"Decentralized ERC20 Education Certification on the Block Chain "```
+## ```"Decentralized Education Certifications published on the Block Chain using IPFS "```
