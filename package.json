@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Decentralized Social Media",
   "author": "Dapp University",
-  "homepage": ".",
+  "homepage": "http://DevDApps.github.io/EdCert",
   "dependencies": {
     "@truffle/hdwallet-provider": "^1.1.0",
     "babel-polyfill": "6.26.0",
@@ -27,7 +27,6 @@
     "truffle-hdwallet-provider-privkey": "^0.3.0",
     "web3": "^1.3.0"
   },
-  "homepage": "http://DevDApps.github.io/EdCert",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
