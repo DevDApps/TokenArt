@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/EdCert/static/css/main.18de8aef.chunk.css",
+    "main.js": "/EdCert/static/js/main.05ba35fc.chunk.js",
+    "main.js.map": "/EdCert/static/js/main.05ba35fc.chunk.js.map",
+    "runtime-main.js": "/EdCert/static/js/runtime-main.d9b28bd2.js",
+    "runtime-main.js.map": "/EdCert/static/js/runtime-main.d9b28bd2.js.map",
+    "static/css/2.80dce9aa.chunk.css": "/EdCert/static/css/2.80dce9aa.chunk.css",
+    "static/js/2.fd9417dd.chunk.js": "/EdCert/static/js/2.fd9417dd.chunk.js",
+    "static/js/2.fd9417dd.chunk.js.map": "/EdCert/static/js/2.fd9417dd.chunk.js.map",
+    "index.html": "/EdCert/index.html",
+    "precache-manifest.fa363e804c7d891977ebf8ce90d0750a.js": "/EdCert/precache-manifest.fa363e804c7d891977ebf8ce90d0750a.js",
+    "service-worker.js": "/EdCert/service-worker.js",
+    "static/css/2.80dce9aa.chunk.css.map": "/EdCert/static/css/2.80dce9aa.chunk.css.map",
+    "static/css/main.18de8aef.chunk.css.map": "/EdCert/static/css/main.18de8aef.chunk.css.map",
+    "static/js/2.fd9417dd.chunk.js.LICENSE.txt": "/EdCert/static/js/2.fd9417dd.chunk.js.LICENSE.txt",
+    "static/media/photo.png": "/EdCert/static/media/photo.23bc952e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d9b28bd2.js",
+    "static/css/2.80dce9aa.chunk.css",
+    "static/js/2.fd9417dd.chunk.js",
+    "static/css/main.18de8aef.chunk.css",
+    "static/js/main.05ba35fc.chunk.js"
+  ]
+}
