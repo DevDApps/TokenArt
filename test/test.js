@@ -1,19 +1,19 @@
-const EdCert = artifacts.require('./EdCert.sol')
+const TokenArt = artifacts.require('./TokenArt.sol')
 
 require('chai')
   .use(require('chai-as-promised'))
   .should()
 
-contract('EdCert', ([deployer, author, tipper]) => {
-  let edCert
+contract('TokenArt', ([deployer, author, tipper]) => {
+  let tokenArt
 
   before(async () => {
-    edCert = await EdCert.deployed()
+    tokenArt = await TokenArt.deployed()
   })
 
   describe('deployment', async () => {
     it('deploys successfully', async () => {
-      const address = await edCert.address
+      const address = await tokenArt.address
       assert.notEqual(address, 0x0)
       assert.notEqual(address, '')
       assert.notEqual(address, null)
@@ -21,8 +21,8 @@ contract('EdCert', ([deployer, author, tipper]) => {
     })
 
     it('has a name', async () => {
-      const name = await edCert.name()
-      assert.equal(name, 'EdCert')
+      const name = await tokenArt.name()
+      assert.equal(name, 'TokenArt')
     })
   })
 
@@ -31,8 +31,8 @@ contract('EdCert', ([deployer, author, tipper]) => {
     const hash = 'QmV8cfu6n4NT5xRr2AHdKxFMTZEJrA44qgrBCr739BN9Wb'
 
     before(async () => {
-      result = await edCert.uploadImage(hash, '0x64CE0053CD7B38B120fAB0b35EF87B0Ec527579d', { from: author })
-      imageCount = await edCert.imageCount()
+      result = await tokenArt.uploadImage(hash, '0x64CE0053CD7B38B120fAB0b35EF87B0Ec527579d', { from: author })
+      imageCount = await tokenArt.imageCount()
     })
 
     //check event
@@ -47,15 +47,15 @@ contract('EdCert', ([deployer, author, tipper]) => {
 
 
       // FAILURE: Image must have hash
-      await edCert.uploadImage('', '0x64CE0053CD7B38B120fAB0b35EF87B0Ec527579d', { from: author }).should.be.rejected;
+      await tokenArt.uploadImage('', '0x64CE0053CD7B38B120fAB0b35EF87B0Ec527579d', { from: author }).should.be.rejected;
 
       // FAILURE: Image must have description
-      await edCert.uploadImage('Image hash', '', { from: author }).should.be.rejected;
+      await tokenArt.uploadImage('Image hash', '', { from: author }).should.be.rejected;
     })
 
     //check from Struct
     it('lists images', async () => {
-      const image = await edCert.images(imageCount)
+      const image = await tokenArt.images(imageCount)
       assert.equal(image.id.toNumber(), imageCount.toNumber(), 'id is correct')
       assert.equal(image.hash, hash, 'Hash is correct')
       assert.equal(image.student, 'student wallet address', 'description is correct')

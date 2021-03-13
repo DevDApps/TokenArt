@@ -1,4 +1,4 @@
-import EdCert from '../abis/EdCert.json'
+import TokenArt from '../abis/TokenArt.json'
 import React, { Component } from 'react';
 import Identicon from 'identicon.js';
 import Navbar from './Navbar'
@@ -37,15 +37,15 @@ class App extends Component {
     this.setState({ account: accounts[0] })
     // Network ID
     const networkId = await web3.eth.net.getId()
-    const networkData = EdCert.networks[networkId]
+    const networkData = TokenArt.networks[networkId]
     if(networkData) {
-      const edCert = new web3.eth.Contract(EdCert.abi, networkData.address)
-      this.setState({ edCert })
-      const imagesCount = await edCert.methods.imageCount().call()
+      const tokenArt = new web3.eth.Contract(TokenArt.abi, networkData.address)
+      this.setState({ tokenArt })
+      const imagesCount = await tokenArt.methods.imageCount().call()
       this.setState({ imagesCount })
       // Load images
       for (var i = 1; i <= imagesCount; i++) {
-        const image = await edCert.methods.images(i).call()
+        const image = await tokenArt.methods.images(i).call()
         this.setState({
           images: [...this.state.images, image]
         })
@@ -53,7 +53,7 @@ class App extends Component {
 
       this.setState({ loading: false})
     } else {
-      window.alert('EdCert contract not deployed to detected network.')
+      window.alert('TokenArt contract not deployed to detected network.')
     }
   }
 
@@ -81,7 +81,7 @@ class App extends Component {
       }
 
       this.setState({ loading: true })
-      this.state.edCert.methods.uploadImage(result[0].hash, student).send({ from: this.state.account }).on('transactionHash', (hash) => {
+      this.state.tokenArt.methods.uploadImage(result[0].hash, student).send({ from: this.state.account }).on('transactionHash', (hash) => {
       this.setState({ loading: false })
       // refresh 
       window.location.reload(false);
@@ -119,7 +119,7 @@ class App extends Component {
     super(props)
     this.state = {
       account: '',
-      edCert: null,
+      tokenArt: null,
       images: [],
       userSearchFilter: "",
       userSearchFilterLast: "",

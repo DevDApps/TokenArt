@@ -1,5 +1,5 @@
-const EdCert = artifacts.require("EdCert");
+const TokenArt = artifacts.require("TokenArt");
 
 module.exports = function(deployer) {
-  deployer.deploy(EdCert);
+  deployer.deploy(TokenArt);
 };

@@ -1,9 +1,9 @@
 {
-  "name": "edCert",
+  "name": "tokenArt",
   "version": "0.1.0",
   "description": "Decentralized Social Media",
   "author": "Dapp University",
-  "homepage": "http://DevDApps.github.io/EdCert",
+  "homepage": "http://DevDApps.github.io/TokenArt",
   "dependencies": {
     "@truffle/hdwallet-provider": "^1.1.0",
     "babel-polyfill": "6.26.0",

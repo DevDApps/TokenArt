@@ -1,5 +1,5 @@
 {
-  "contractName": "EdCert",
+  "contractName": "TokenArt",
   "abi": [
     {
       "constant": true,
@@ -122,12 +122,12 @@
   "deployedBytecode": "0x608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806306fdde031461006757806384856482146100f757806392053b6314610251578063a91b83141461027c575b600080fd5b34801561007357600080fd5b5061007c6103db565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100bc5780820151818401526020810190506100a1565b50505050905090810190601f1680156100e95780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561010357600080fd5b506101306004803603602081101561011a57600080fd5b8101908080359060200190929190505050610479565b6040518085815260200180602001806020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838103835286818151815260200191508051906020019080838360005b838110156101ac578082015181840152602081019050610191565b50505050905090810190601f1680156101d95780820380516001836020036101000a031916815260200191505b50838103825285818151815260200191508051906020019080838360005b838110156102125780820151818401526020810190506101f7565b50505050905090810190601f16801561023f5780820380516001836020036101000a031916815260200191505b50965050505050505060405180910390f35b34801561025d57600080fd5b506102666105f9565b6040518082815260200191505060405180910390f35b34801561028857600080fd5b506103d96004803603604081101561029f57600080fd5b81019080803590602001906401000000008111156102bc57600080fd5b8201836020820111156102ce57600080fd5b803590602001918460018302840111640100000000831117156102f057600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192908035906020019064010000000081111561035357600080fd5b82018360208201111561036557600080fd5b8035906020019184600183028401116401000000008311171561038757600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506105ff565b005b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104715780601f1061044657610100808354040283529160200191610471565b820191906000526020600020905b81548152906001019060200180831161045457829003601f168201915b505050505081565b6002602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561052b5780601f106105005761010080835404028352916020019161052b565b820191906000526020600020905b81548152906001019060200180831161050e57829003601f168201915b505050505090806002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105c95780601f1061059e576101008083540402835291602001916105c9565b820191906000526020600020905b8154815290600101906020018083116105ac57829003601f168201915b5050505050908060030160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905084565b60015481565b6000825111151561060f57600080fd5b6000815111151561061f57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415151561065b57600080fd5b60016000815480929190600101919050555060806040519081016040528060015481526020018381526020018281526020013373ffffffffffffffffffffffffffffffffffffffff168152506002600060015481526020019081526020016000206000820151816000015560208201518160010190805190602001906106e2929190610895565b5060408201518160020190805190602001906106ff929190610895565b5060608201518160030160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055509050507fb82a9f3a70bc97d2ca962d6c417b770c2158b2014d3f028d4de74b315692d4c76001548383336040518085815260200180602001806020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838103835286818151815260200191508051906020019080838360005b838110156107ed5780820151818401526020810190506107d2565b50505050905090810190601f16801561081a5780820380516001836020036101000a031916815260200191505b50838103825285818151815260200191508051906020019080838360005b83811015610853578082015181840152602081019050610838565b50505050905090810190601f1680156108805780820380516001836020036101000a031916815260200191505b50965050505050505060405180910390a15050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106108d657805160ff1916838001178555610904565b82800160010185558215610904579182015b828111156109035782518255916020019190600101906108e8565b5b5090506109119190610915565b5090565b61093791905b8082111561093357600081600090555060010161091b565b5090565b9056fea165627a7a72305820b9fdf0a21468941a46e4b7d9f496961c0da997c81362aa151c926db6780b0b690029",
   "sourceMap": "27:990:0:-;;;96:1;71:26;;366:49;8:9:-1;5:2;;;30:1;27;20:12;5:2;366:49:0;394:15;;;;;;;;;;;;;;;;;;:4;:15;;;;;;;;;;;;:::i;:::-;;27:990;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
   "deployedSourceMap": "27:990:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;48:18;;8:9:-1;5:2;;;30:1;27;20:12;5:2;48:18:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;48:18:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;102:36;;8:9:-1;5:2;;;30:1;27;20:12;5:2;102:36:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;102:36:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;102:36:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;102:36:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;71:26;;8:9:-1;5:2;;;30:1;27;20:12;5:2;71:26:0;;;;;;;;;;;;;;;;;;;;;;;421:589;;8:9:-1;5:2;;;30:1;27;20:12;5:2;421:589:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;421:589:0;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;421:589:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;421:589:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;421:589:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;421:589:0;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;421:589:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;421:589:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;421:589:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;421:589:0;;;;;;;;;;;;;;;;;;48:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;102:36::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;71:26::-;;;;:::o;421:589::-;577:1;558:8;552:22;:26;544:35;;;;;;;;667:1;648:8;642:22;:26;634:35;;;;;;;;746:1;726:22;;:10;:22;;;;718:31;;;;;;;;785:10;;:13;;;;;;;;;;;;;862:49;;;;;;;;;868:10;;862:49;;;;880:8;862:49;;;;890:8;862:49;;;;900:10;862:49;;;;;841:6;:18;848:10;;841:18;;;;;;;;;;;:70;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;948:56;961:10;;973:8;983;993:10;948:56;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;948:56:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;948:56:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;421:589;;:::o;27:990::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract EdCert {\r\n  string public name;\r\n  uint public imageCount = 0;\r\n  mapping(uint => Image) public images;\r\n\r\n  struct Image {\r\n    uint id;\r\n    string hash;\r\n    string student;\r\n    address payable author;\r\n  }\r\n\r\n  event ImageCreated(\r\n    uint id,\r\n    string hash,\r\n    string student,\r\n    address payable author\r\n  );\r\n\r\n\r\n  constructor() public {\r\n    name = \"EdCert\";\r\n  }\r\n\r\n  function uploadImage(string memory _imgHash, string memory _student) public {\r\n    // Make sure the image hash exists\r\n    require(bytes(_imgHash).length > 0);\r\n    // Make sure student wallet address exists\r\n    require(bytes(_student).length > 0);\r\n    // Make sure uploader address exists\r\n    require(msg.sender!=address(0));\r\n\r\n    // Increment image id\r\n    imageCount ++;\r\n\r\n    // Add Image to the contract\r\n    images[imageCount] = Image(imageCount, _imgHash, _student, msg.sender);\r\n    // Trigger an event\r\n    emit ImageCreated(imageCount, _imgHash, _student, msg.sender);\r\n  }\r\n\r\n\r\n}\r\n",
-  "sourcePath": "C:/users/susan/dapps/edcert/src/contracts/EdCert.sol",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract TokenArt {\r\n  string public name;\r\n  uint public imageCount = 0;\r\n  mapping(uint => Image) public images;\r\n\r\n  struct Image {\r\n    uint id;\r\n    string hash;\r\n    string student;\r\n    address payable author;\r\n  }\r\n\r\n  event ImageCreated(\r\n    uint id,\r\n    string hash,\r\n    string student,\r\n    address payable author\r\n  );\r\n\r\n\r\n  constructor() public {\r\n    name = \"TokenArt\";\r\n  }\r\n\r\n  function uploadImage(string memory _imgHash, string memory _student) public {\r\n    // Make sure the image hash exists\r\n    require(bytes(_imgHash).length > 0);\r\n    // Make sure student wallet address exists\r\n    require(bytes(_student).length > 0);\r\n    // Make sure uploader address exists\r\n    require(msg.sender!=address(0));\r\n\r\n    // Increment image id\r\n    imageCount ++;\r\n\r\n    // Add Image to the contract\r\n    images[imageCount] = Image(imageCount, _imgHash, _student, msg.sender);\r\n    // Trigger an event\r\n    emit ImageCreated(imageCount, _imgHash, _student, msg.sender);\r\n  }\r\n\r\n\r\n}\r\n",
+  "sourcePath": "C:/users/susan/dapps/tokenart/src/contracts/TokenArt.sol",
   "ast": {
-    "absolutePath": "/C/users/susan/dapps/edcert/src/contracts/EdCert.sol",
+    "absolutePath": "/C/users/susan/dapps/tokenart/src/contracts/TokenArt.sol",
     "exportedSymbols": {
-      "EdCert": [
+      "TokenArt": [
         96
       ]
     },
@@ -155,7 +155,7 @@
         "linearizedBaseContracts": [
           96
         ],
-        "name": "EdCert",
+        "name": "TokenArt",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
@@ -238,7 +238,7 @@
             "storageLocation": "default",
             "typeDescriptions": {
               "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Image_$19_storage_$",
-              "typeString": "mapping(uint256 => struct EdCert.Image)"
+              "typeString": "mapping(uint256 => struct TokenArt.Image)"
             },
             "typeName": {
               "id": 9,
@@ -256,7 +256,7 @@
               "src": "102:22:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Image_$19_storage_$",
-                "typeString": "mapping(uint256 => struct EdCert.Image)"
+                "typeString": "mapping(uint256 => struct TokenArt.Image)"
               },
               "valueType": {
                 "contractScope": null,
@@ -267,7 +267,7 @@
                 "src": "118:5:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_struct$_Image_$19_storage_ptr",
-                  "typeString": "struct EdCert.Image"
+                  "typeString": "struct TokenArt.Image"
                 }
               }
             },
@@ -275,7 +275,7 @@
             "visibility": "public"
           },
           {
-            "canonicalName": "EdCert.Image",
+            "canonicalName": "TokenArt.Image",
             "id": 19,
             "members": [
               {
@@ -557,9 +557,9 @@
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_stringliteral_b28d0bb69b079a30a8dd36af2e782ada3b2aae2b6d7556ba6bd6cf4e4b587206",
-                        "typeString": "literal_string \"EdCert\""
+                        "typeString": "literal_string \"TokenArt\""
                       },
-                      "value": "EdCert"
+                      "value": "TokenArt"
                     },
                     "src": "394:15:0",
                     "typeDescriptions": {
@@ -1102,7 +1102,7 @@
                         "src": "841:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Image_$19_storage_$",
-                          "typeString": "mapping(uint256 => struct EdCert.Image storage ref)"
+                          "typeString": "mapping(uint256 => struct TokenArt.Image storage ref)"
                         }
                       },
                       "id": 76,
@@ -1127,7 +1127,7 @@
                       "src": "841:18:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Image_$19_storage",
-                        "typeString": "struct EdCert.Image storage ref"
+                        "typeString": "struct TokenArt.Image storage ref"
                       }
                     },
                     "nodeType": "Assignment",
@@ -1231,7 +1231,7 @@
                         "src": "862:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_struct$_Image_$19_storage_ptr_$",
-                          "typeString": "type(struct EdCert.Image storage pointer)"
+                          "typeString": "type(struct TokenArt.Image storage pointer)"
                         }
                       },
                       "id": 83,
@@ -1245,13 +1245,13 @@
                       "src": "862:49:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Image_$19_memory",
-                        "typeString": "struct EdCert.Image memory"
+                        "typeString": "struct TokenArt.Image memory"
                       }
                     },
                     "src": "841:70:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_Image_$19_storage",
-                      "typeString": "struct EdCert.Image storage ref"
+                      "typeString": "struct TokenArt.Image storage ref"
                     }
                   },
                   "id": 85,
@@ -1467,9 +1467,9 @@
     "src": "0:1019:0"
   },
   "legacyAST": {
-    "absolutePath": "/C/users/susan/dapps/edcert/src/contracts/EdCert.sol",
+    "absolutePath": "/C/users/susan/dapps/tokenart/src/contracts/TokenArt.sol",
     "exportedSymbols": {
-      "EdCert": [
+      "TokenArt": [
         96
       ]
     },
@@ -1497,7 +1497,7 @@
         "linearizedBaseContracts": [
           96
         ],
-        "name": "EdCert",
+        "name": "TokenArt",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
@@ -1580,7 +1580,7 @@
             "storageLocation": "default",
             "typeDescriptions": {
               "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Image_$19_storage_$",
-              "typeString": "mapping(uint256 => struct EdCert.Image)"
+              "typeString": "mapping(uint256 => struct TokenArt.Image)"
             },
             "typeName": {
               "id": 9,
@@ -1598,7 +1598,7 @@
               "src": "102:22:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Image_$19_storage_$",
-                "typeString": "mapping(uint256 => struct EdCert.Image)"
+                "typeString": "mapping(uint256 => struct TokenArt.Image)"
               },
               "valueType": {
                 "contractScope": null,
@@ -1609,7 +1609,7 @@
                 "src": "118:5:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_struct$_Image_$19_storage_ptr",
-                  "typeString": "struct EdCert.Image"
+                  "typeString": "struct TokenArt.Image"
                 }
               }
             },
@@ -1617,7 +1617,7 @@
             "visibility": "public"
           },
           {
-            "canonicalName": "EdCert.Image",
+            "canonicalName": "TokenArt.Image",
             "id": 19,
             "members": [
               {
@@ -1899,9 +1899,9 @@
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_stringliteral_b28d0bb69b079a30a8dd36af2e782ada3b2aae2b6d7556ba6bd6cf4e4b587206",
-                        "typeString": "literal_string \"EdCert\""
+                        "typeString": "literal_string \"TokenArt\""
                       },
-                      "value": "EdCert"
+                      "value": "TokenArt"
                     },
                     "src": "394:15:0",
                     "typeDescriptions": {
@@ -2444,7 +2444,7 @@
                         "src": "841:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Image_$19_storage_$",
-                          "typeString": "mapping(uint256 => struct EdCert.Image storage ref)"
+                          "typeString": "mapping(uint256 => struct TokenArt.Image storage ref)"
                         }
                       },
                       "id": 76,
@@ -2469,7 +2469,7 @@
                       "src": "841:18:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Image_$19_storage",
-                        "typeString": "struct EdCert.Image storage ref"
+                        "typeString": "struct TokenArt.Image storage ref"
                       }
                     },
                     "nodeType": "Assignment",
@@ -2573,7 +2573,7 @@
                         "src": "862:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_struct$_Image_$19_storage_ptr_$",
-                          "typeString": "type(struct EdCert.Image storage pointer)"
+                          "typeString": "type(struct TokenArt.Image storage pointer)"
                         }
                       },
                       "id": 83,
@@ -2587,13 +2587,13 @@
                       "src": "862:49:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Image_$19_memory",
-                        "typeString": "struct EdCert.Image memory"
+                        "typeString": "struct TokenArt.Image memory"
                       }
                     },
                     "src": "841:70:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_Image_$19_storage",
-                      "typeString": "struct EdCert.Image storage ref"
+                      "typeString": "struct TokenArt.Image storage ref"
                     }
                   },
                   "id": 85,
