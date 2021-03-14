@@ -73,7 +73,7 @@ contract TokenArt is ERC721Full {
    // Update the image
    images[_id] = _image;
    // Trigger an event
-   emit ImageBought(_id, _image.hash, _image.price, _owner);
+   emit ImageBought(_id, _image.hash, _image.price, _image.owner);
  }
 
 }

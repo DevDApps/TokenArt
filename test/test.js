@@ -4,7 +4,7 @@ require('chai')
   .use(require('chai-as-promised'))
   .should()
 
-contract('TokenArt', ([deployer, owner]) => {
+contract('TokenArt', ([deployer, owner, buyer]) => {
   let tokenArt
 
   before(async () => {
@@ -19,8 +19,6 @@ contract('TokenArt', ([deployer, owner]) => {
       assert.notEqual(address, null)
       assert.notEqual(address, undefined)
     })
-
-  
   })
 
   describe('images', async () => {
@@ -55,6 +53,34 @@ contract('TokenArt', ([deployer, owner]) => {
       assert.equal(image.id.toNumber(), imageCount.toNumber(), 'id is correct')
       assert.equal(image.hash, hash, 'Hash is correct')
       assert.equal(image.owner, owner, 'owner is correct')
+    })
+
+    it('allows users to buy images', async () => {
+      // Track the owner balance before purchase
+      let oldOwnerBalance
+      oldOwnerBalance = await web3.eth.getBalance(owner)
+      oldOwnerBalance = new web3.utils.BN(oldOwnerBalance)
+
+      result = await tokenArt.buyFromOwner(imageCount, { from: buyer, value: web3.utils.toWei('1', 'Ether') })
+
+      // SUCCESS
+      const event = result.logs[0].args
+
+      // Check that owner received funds
+      let newOwnerBalance
+      newOwnerBalance = await web3.eth.getBalance(owner)
+      newOwnerBalance = new web3.utils.BN(newOwnerBalance)
+
+      let buyImageOwner
+      buyImageOwner = web3.utils.toWei('1', 'Ether')
+      buyImageOwner = new web3.utils.BN(buyImageOwner)
+
+      const expectedBalance = oldOwnerBalance.add(buyImageOwner)
+
+      assert.equal(newOwnerBalance.toString(), expectedBalance.toString())
+
+      // FAILURE: Tries to buy an image that does not exist
+      await tokenArt.buyFromOwner(99, { from: buyer, value: web3.utils.toWei('1', 'Ether')}).should.be.rejected;
     })
 
   })
