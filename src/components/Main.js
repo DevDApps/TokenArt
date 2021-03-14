@@ -12,7 +12,7 @@ class Main extends Component {
             <div className="content mr-auto ml-auto">
               <p>&nbsp;</p>
 
-              <h2>Mint an Art Image as an NFT</h2>
+              <h2>Mint an NFT</h2>
               <form onSubmit={(event) => {
                 event.preventDefault()
                 const price = this.priceInput.value
@@ -50,10 +50,10 @@ class Main extends Component {
               { this.props.images.map((image, key) => {
                 return(
 
-                <div className="card mb-3" key={key} >
+                <div className="card mb-5" key={key} >
                     <div className="card-header">
                       <img
-                        className='mr-2'
+                        className='mx-2'
                         width='30'
                         height='30'
                         src={`data:image/png;base64,${new Identicon(image.owner, 30).toString()}`}
@@ -64,12 +64,20 @@ class Main extends Component {
                     <ul id="imageList" className="list-group list-group-flush">
                       <li className="list-group-item">
                         <p className="text-center">
-                            <img  src={`https://ipfs.infura.io/ipfs/${image.hash}`} width="45%"   />
+                            <img  src={`https://ipfs.infura.io/ipfs/${image.hash}`} width="65%"   />
                         </p>
 
-                        <div class="row">
-                           <h4 class="col-auto mr-auto">#{image.id} </h4>
-                           <h4 class="col-auto">Price {image.price} Eth </h4>
+
+                        <div class="row justify-content-center">
+
+                           <h4 class="col-5">#{image.id}
+                               &nbsp; &nbsp;
+                               <button type="button" class="btn btn-success" onChange={ this.props.getValueInput }
+                                    ref={(input) => { this.userBuyNFT = input }}>
+                                      Buy for {image.price} Eth
+                                </button>
+
+                            </h4>
                         </div>
                       </li>
                     </ul>
