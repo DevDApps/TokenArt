@@ -8,32 +8,32 @@ class Main extends Component {
 
       <div className="container-fluid mt-5">
         <div className="row">
-          <main role="main" className="col-lg-12 ml-auto mr-auto" style={{ maxWidth: '500px' }}>
+          <main role="main" className="col-lg-12 ml-auto mr-auto" style={{ maxWidth: '600px' }}>
             <div className="content mr-auto ml-auto">
               <p>&nbsp;</p>
 
-              <h2>Post a Certification</h2>
+              <h2>Mint an Art Image as an NFT</h2>
               <form onSubmit={(event) => {
                 event.preventDefault()
-                const student = this.studentWallet.value
-                this.props.uploadImage(student)
+                const price = this.priceInput.value
+                this.props.uploadImage(price)
               }} >
                 <input type='file' accept=".jpg, .jpeg, .png, .bmp, .gif" onChange={this.props.captureFile} />
                   <div className="form-group mr-sm-2">
                     <br></br>
                       <input
-                        id="studentWallet"
+                        id="priceInput"
                         type="text"
-                        ref={(input) => { this.studentWallet = input }}
+                        ref={(input) => { this.priceInput = input }}
                         className="form-control"
-                        placeholder="Wallet Address to Award Certificate to ..."
+                        placeholder="Enter price in Eth ..."
                         required />
                   </div>
                 <button type="submit" className="btn btn-primary btn-block btn-lg">Upload</button>
               </form>
 
 
-              <p>&nbsp;</p>
+              <hr />
               <p>&nbsp;</p>
               <label>Search by Owner: </label>
               <input
@@ -47,21 +47,18 @@ class Main extends Component {
 
               <p>&nbsp;</p>
 
-
-
-
               { this.props.images.map((image, key) => {
                 return(
 
-                <div className="card mb-4" key={key} >
+                <div className="card mb-3" key={key} >
                     <div className="card-header">
                       <img
                         className='mr-2'
                         width='30'
                         height='30'
-                        src={`data:image/png;base64,${new Identicon(image.student, 30).toString()}`}
+                        src={`data:image/png;base64,${new Identicon(image.owner, 30).toString()}`}
                       />
-                      <small className="text-muted">{image.student}</small>
+                      <small className="text-muted">{image.owner}</small>
                     </div>
 
                     <ul id="imageList" className="list-group list-group-flush">
@@ -69,12 +66,11 @@ class Main extends Component {
                         <p className="text-center">
                             <img  src={`https://ipfs.infura.io/ipfs/${image.hash}`} width="45%"   />
                         </p>
-                        <a
-                        href={`https://ipfs.infura.io/ipfs/${image.hash}`}
-                        target="_blank"
-                        rel="noopener noreferrer">
-                             <small className="text-muted">Issued by: {image.author}</small>
-                        </a>
+
+                        <div class="row">
+                           <h4 class="col-auto mr-auto">NFT #{image.id} </h4>
+                           <h4 class="col-auto">Price {image.price} Eth </h4>
+                        </div>
                       </li>
                     </ul>
                   </div>

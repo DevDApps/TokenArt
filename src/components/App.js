@@ -69,7 +69,7 @@ class App extends Component {
     console.log('buffer', this.state.buffer)  }
   }
 
-  uploadImage = student => {
+  uploadImage = owner => {
     console.log("Submitting file to ipfs...")
 
     //adding file to the IPFS
@@ -81,9 +81,9 @@ class App extends Component {
       }
 
       this.setState({ loading: true })
-      this.state.tokenArt.methods.uploadImage(result[0].hash, student).send({ from: this.state.account }).on('transactionHash', (hash) => {
+      this.state.tokenArt.methods.uploadImage(result[0].hash, owner).send({ from: this.state.account }).on('transactionHash', (hash) => {
       this.setState({ loading: false })
-      // refresh 
+      // refresh
       window.location.reload(false);
       })
     })
@@ -109,11 +109,9 @@ class App extends Component {
       const { images } = this.state
       console.log("in filterNames searchValue = ", searchValue)
       this.setState({
-        images: images.filter(x => x.student.includes(searchValue))
+        images: images.filter(x => x.owner.includes(searchValue))
       })
-
   }
-
 
   constructor(props) {
     super(props)

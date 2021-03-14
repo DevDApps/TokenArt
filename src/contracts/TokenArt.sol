@@ -10,26 +10,26 @@ contract TokenArt is ERC721Full {
   struct Image {
     uint id;
     string hash;
-    string student;
-    address payable author;
+    string price;
+    address payable owner;
   }
 
   event ImageCreated(
     uint id,
     string hash,
-    string student,
-    address payable author
+    string price,
+    address payable owner
   );
 
 
   constructor() ERC721Full("art", "ART") public {
   }
 
-  function uploadImage(string memory _imgHash, string memory _student) public {
+  function uploadImage(string memory _imgHash, string memory _price) public {
     // Make sure the image hash exists
     require(bytes(_imgHash).length > 0);
-    // Make sure student wallet address exists
-    require(bytes(_student).length > 0);
+    // Make sure owner wallet address exists
+    require(bytes(_price).length > 0);
     // Make sure uploader address exists
     require(msg.sender!=address(0));
 
@@ -37,9 +37,9 @@ contract TokenArt is ERC721Full {
     imageCount ++;
 
     // Add Image to the contract
-    images[imageCount] = Image(imageCount, _imgHash, _student, msg.sender);
+    images[imageCount] = Image(imageCount, _imgHash, _price, msg.sender);
     // Trigger an event
-    emit ImageCreated(imageCount, _imgHash, _student, msg.sender);
+    emit ImageCreated(imageCount, _imgHash, _price, msg.sender);
 
     uint _id = imageCount;
 
