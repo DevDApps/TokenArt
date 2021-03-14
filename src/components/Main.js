@@ -68,12 +68,18 @@ class Main extends Component {
                         </p>
 
 
-                        <div class="row justify-content-center">
+                        <div className="row justify-content-center">
 
-                           <h4 class="col-5">#{image.id}
+                           <h4 className="col-5">#{image.id}
                                &nbsp; &nbsp;
-                               <button type="button" class="btn btn-success" onChange={ this.props.getValueInput }
-                                    ref={(input) => { this.userBuyNFT = input }}>
+                               <button
+                                     className="btn btn-success"
+                                     name={image.id}
+                                     onClick={(event) => {
+                                       let toWeiPrice = window.web3.utils.toWei( image.price, 'Ether')
+                                       console.log(event.target.name, toWeiPrice)
+                                       this.props.buyNFT(event.target.name, toWeiPrice)
+                                 }} >
                                       Buy for {image.price} Eth
                                 </button>
 

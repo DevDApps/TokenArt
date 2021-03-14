@@ -21,6 +21,14 @@ contract TokenArt is ERC721Full {
     address payable owner
   );
 
+  event ImageBought(
+   uint id,
+   string hash,
+   string price,
+   address payable owner
+ );
+
+
 
   constructor() ERC721Full("art", "ART") public {
   }
@@ -47,5 +55,21 @@ contract TokenArt is ERC721Full {
     _mint(msg.sender, _id);
   }
 
+  function buyFromOwner(uint _id) public payable {
+   // Make sure the id is valid
+   require(_id > 0 && _id <= imageCount);
+   // Fetch the image
+   Image memory _image = images[_id];
+   // Fetch the owner
+   address payable _owner= _image.owner;
+   // Pay the owner by sending them Ether
+   address(_owner).transfer(msg.value);
+   // Transfer the ownership
+   _transferFrom(_owner, msg.sender, _id);
+    // Update the owner in struct
+   _image.owner = msg.sender;
+   // Trigger an event
+   emit ImageBought(_id, _image.hash, _image.price, _owner);
+ }
 
 }

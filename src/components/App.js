@@ -89,6 +89,13 @@ class App extends Component {
     })
   }
 
+  buyNFT(id, price) {
+     this.setState({ loading: true })
+     this.state.tokenArt.methods.buyFromOwner(id).send({ from: this.state.account, value: price }).on('transactionHash', (hash) => {
+       this.setState({ loading: false })
+     })
+   }
+
   getValueInput = event => {
       event.preventDefault()
       const searchValue = event.target.value
@@ -128,6 +135,7 @@ class App extends Component {
     this.captureFile = this.captureFile.bind(this)
     this.filterNames = this.filterNames.bind(this);
     this.getValueInput = this.getValueInput.bind(this);
+    this.buyNFT = this.buyNFT.bind(this);
   }
 
   render() {
@@ -142,6 +150,7 @@ class App extends Component {
               uploadImage={this.uploadImage}
               filterNames={this.filterNames}
               getValueInput={this.getValueInput}
+              buyNFT = {this.buyNFT}
             />
         }
       </div>
