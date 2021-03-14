@@ -69,7 +69,7 @@ class App extends Component {
     console.log('buffer', this.state.buffer)  }
   }
 
-  uploadImage = owner => {
+  uploadImage = price => {
     console.log("Submitting file to ipfs...")
 
     //adding file to the IPFS
@@ -81,7 +81,7 @@ class App extends Component {
       }
 
       this.setState({ loading: true })
-      this.state.tokenArt.methods.uploadImage(result[0].hash, owner).send({ from: this.state.account }).on('transactionHash', (hash) => {
+      this.state.tokenArt.methods.uploadImage(result[0].hash, price).send({ from: this.state.account }).on('transactionHash', (hash) => {
       this.setState({ loading: false })
       // refresh
       window.location.reload(false);

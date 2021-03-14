@@ -60,14 +60,18 @@ contract TokenArt is ERC721Full {
    require(_id > 0 && _id <= imageCount);
    // Fetch the image
    Image memory _image = images[_id];
-   // Fetch the owner
+   // Fetch the owner and new owner
    address payable _owner= _image.owner;
+   address payable _newowner= msg.sender;
    // Pay the owner by sending them Ether
    address(_owner).transfer(msg.value);
-   // Transfer the ownership
-   _transferFrom(_owner, msg.sender, _id);
+   // Transfer the ERC721 ownership
+   _transferFrom(_owner, _newowner, _id);
+
     // Update the owner in struct
-   _image.owner = msg.sender;
+   _image.owner = _newowner;
+   // Update the image
+   images[_id] = _image;
    // Trigger an event
    emit ImageBought(_id, _image.hash, _image.price, _owner);
  }
