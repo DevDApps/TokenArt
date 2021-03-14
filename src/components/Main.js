@@ -68,7 +68,7 @@ class Main extends Component {
                         </p>
 
                         <div class="row">
-                           <h4 class="col-auto mr-auto">NFT #{image.id} </h4>
+                           <h4 class="col-auto mr-auto">#{image.id} </h4>
                            <h4 class="col-auto">Price {image.price} Eth </h4>
                         </div>
                       </li>
