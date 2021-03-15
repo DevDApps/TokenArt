@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/TokenArt/static/css/main.18de8aef.chunk.css",
-    "main.js": "/TokenArt/static/js/main.d898b3f6.chunk.js",
-    "main.js.map": "/TokenArt/static/js/main.d898b3f6.chunk.js.map",
+    "main.js": "/TokenArt/static/js/main.fa23928a.chunk.js",
+    "main.js.map": "/TokenArt/static/js/main.fa23928a.chunk.js.map",
     "runtime-main.js": "/TokenArt/static/js/runtime-main.8c522e6b.js",
     "runtime-main.js.map": "/TokenArt/static/js/runtime-main.8c522e6b.js.map",
     "static/css/2.80dce9aa.chunk.css": "/TokenArt/static/css/2.80dce9aa.chunk.css",
     "static/js/2.2e5a3f25.chunk.js": "/TokenArt/static/js/2.2e5a3f25.chunk.js",
     "static/js/2.2e5a3f25.chunk.js.map": "/TokenArt/static/js/2.2e5a3f25.chunk.js.map",
     "index.html": "/TokenArt/index.html",
-    "precache-manifest.cd7cc26bdd0e82030521ba8ff1f46722.js": "/TokenArt/precache-manifest.cd7cc26bdd0e82030521ba8ff1f46722.js",
+    "precache-manifest.36b450c329701d0d53b007379d9e0839.js": "/TokenArt/precache-manifest.36b450c329701d0d53b007379d9e0839.js",
     "service-worker.js": "/TokenArt/service-worker.js",
     "static/css/2.80dce9aa.chunk.css.map": "/TokenArt/static/css/2.80dce9aa.chunk.css.map",
     "static/css/main.18de8aef.chunk.css.map": "/TokenArt/static/css/main.18de8aef.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.80dce9aa.chunk.css",
     "static/js/2.2e5a3f25.chunk.js",
     "static/css/main.18de8aef.chunk.css",
-    "static/js/main.d898b3f6.chunk.js"
+    "static/js/main.fa23928a.chunk.js"
   ]
 }
