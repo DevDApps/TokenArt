@@ -27,6 +27,7 @@
     "truffle-hdwallet-provider-privkey": "^0.3.0",
     "web3": "^1.3.0"
   },
+  "homepage": "http://DevDApps.github.io/TokenArt",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
