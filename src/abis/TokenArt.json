@@ -5726,21 +5726,21 @@
     "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
   },
   "networks": {
-    "5777": {
-      "events": {},
-      "links": {},
-      "address": "0xe03a8D6d28429C636baf44fBF7e955dda8FC91e9",
-      "transactionHash": "0x52494aba3262b533e079b7816544f7ef2b1bb70eb1b4e200c07ae9ceffda4a0c"
-    },
     "3": {
       "events": {},
       "links": {},
-      "address": "0x2515ca47e7744e4ff6ae89872d60afbe1f5c33ec",
-      "transactionHash": "0x070877a2a17beb9e09f57b05eb67117e685635e1cbb4246881380ba54c386b61"
+      "address": "0xeced7570e55b85911615e03a0c83aa09f0c2257c",
+      "transactionHash": "0x4c41381bbde130edb1a39781225097117ccd4d2ba6e460a7fa1b941e53d463f6"
+    },
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x6e7bE346E2Ab6834149891d05Fe4E0B5aC8116Bc",
+      "transactionHash": "0x38d19f88023b1dedb9b715008c5f6bb034de10cd482e28cd2ec48643b3e221d1"
     }
   },
   "schemaVersion": "3.0.2",
-  "updatedAt": "2021-03-15T13:07:38.696Z",
+  "updatedAt": "2021-03-15T19:13:48.949Z",
   "devdoc": {
     "methods": {
       "approve(address,uint256)": {
