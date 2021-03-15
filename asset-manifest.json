@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/TokenArt/static/css/main.18de8aef.chunk.css",
+    "main.js": "/TokenArt/static/js/main.1024093a.chunk.js",
+    "main.js.map": "/TokenArt/static/js/main.1024093a.chunk.js.map",
+    "runtime-main.js": "/TokenArt/static/js/runtime-main.8c522e6b.js",
+    "runtime-main.js.map": "/TokenArt/static/js/runtime-main.8c522e6b.js.map",
+    "static/css/2.80dce9aa.chunk.css": "/TokenArt/static/css/2.80dce9aa.chunk.css",
+    "static/js/2.2e5a3f25.chunk.js": "/TokenArt/static/js/2.2e5a3f25.chunk.js",
+    "static/js/2.2e5a3f25.chunk.js.map": "/TokenArt/static/js/2.2e5a3f25.chunk.js.map",
+    "index.html": "/TokenArt/index.html",
+    "precache-manifest.8cfb98c597b0438d534e7f93ae5d3ff0.js": "/TokenArt/precache-manifest.8cfb98c597b0438d534e7f93ae5d3ff0.js",
+    "service-worker.js": "/TokenArt/service-worker.js",
+    "static/css/2.80dce9aa.chunk.css.map": "/TokenArt/static/css/2.80dce9aa.chunk.css.map",
+    "static/css/main.18de8aef.chunk.css.map": "/TokenArt/static/css/main.18de8aef.chunk.css.map",
+    "static/js/2.2e5a3f25.chunk.js.LICENSE.txt": "/TokenArt/static/js/2.2e5a3f25.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/TokenArt/static/media/logo.3912faa3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8c522e6b.js",
+    "static/css/2.80dce9aa.chunk.css",
+    "static/js/2.2e5a3f25.chunk.js",
+    "static/css/main.18de8aef.chunk.css",
+    "static/js/main.1024093a.chunk.js"
+  ]
+}
