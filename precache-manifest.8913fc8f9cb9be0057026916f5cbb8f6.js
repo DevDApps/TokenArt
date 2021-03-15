@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c331c279a49637ad407ddb06ae6d8a1b",
+    "revision": "eea8d0959365976d80a972543d84dd1c",
     "url": "/TokenArt/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TokenArt/static/css/2.80dce9aa.chunk.css"
   },
   {
-    "revision": "8096eacfce4f7b157b97",
+    "revision": "efcb1a0e58bdbd9ee33c",
     "url": "/TokenArt/static/css/main.18de8aef.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TokenArt/static/js/2.2e5a3f25.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8096eacfce4f7b157b97",
-    "url": "/TokenArt/static/js/main.fa23928a.chunk.js"
+    "revision": "efcb1a0e58bdbd9ee33c",
+    "url": "/TokenArt/static/js/main.69050e00.chunk.js"
   },
   {
     "revision": "bcc8a210930e6dc010e9",
