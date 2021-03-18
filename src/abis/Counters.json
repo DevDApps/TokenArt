@@ -37437,7 +37437,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.2",
-  "updatedAt": "2021-03-15T19:13:44.668Z",
+  "updatedAt": "2021-03-18T16:36:23.186Z",
   "devdoc": {
     "author": "Matt Condon (@shrugs)\r",
     "details": "Provides counters that can only be incremented or decremented by one. This can be used e.g. to track the number\r of elements in a mapping, issuing ERC721 ids, or counting request ids.\r  * Include with `using Counters for Counters.Counter;`\r Since it is not possible to overflow a 256 bit integer with increments of one, `increment` can skip the SafeMath\r overflow check, thereby saving gas. This does assume however correct usage, in that the underlying `_value` is never\r directly accessed.\r",

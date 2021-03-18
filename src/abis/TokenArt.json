@@ -5732,15 +5732,21 @@
       "address": "0xeced7570e55b85911615e03a0c83aa09f0c2257c",
       "transactionHash": "0x4c41381bbde130edb1a39781225097117ccd4d2ba6e460a7fa1b941e53d463f6"
     },
+    "42": {
+      "events": {},
+      "links": {},
+      "address": "0x8d2d4c5d3ac6477d850c1ddf720587c3d4acfb40",
+      "transactionHash": "0x9d9fb8f2e8dbb40566f9134003da6f39ddeaa99078994035552051578bbdcdf8"
+    },
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x6e7bE346E2Ab6834149891d05Fe4E0B5aC8116Bc",
-      "transactionHash": "0x38d19f88023b1dedb9b715008c5f6bb034de10cd482e28cd2ec48643b3e221d1"
+      "address": "0x9DF36DCF19Daa1B741e0D441E635f6937b9737bf",
+      "transactionHash": "0xdc44eba46b4ebc9d31bde6a10bb3172c9d88af54b34c15749acb6f5387d238c3"
     }
   },
   "schemaVersion": "3.0.2",
-  "updatedAt": "2021-03-15T19:13:48.949Z",
+  "updatedAt": "2021-03-18T16:36:29.299Z",
   "devdoc": {
     "methods": {
       "approve(address,uint256)": {
