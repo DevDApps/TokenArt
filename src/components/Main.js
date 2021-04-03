@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Identicon from 'identicon.js';
+import info from '../InfoIconBlue.jpg';
 
 class Main extends Component {
 
@@ -12,7 +13,13 @@ class Main extends Component {
             <div className="content mr-auto ml-auto">
               <p>&nbsp;</p>
 
-              <h2>Mint an NFT</h2>
+              <h2> Mint an NFT &nbsp;
+                 <img src={info} height="21"
+                    onClick={(event) => {
+                    alert("To mint an NFT, enter the price you would like to sell it for in ETH and upload the image. You can filter by the wallet address of an owner of an NFT and purchase by clicking on the Buy button.  Purchasing an NFT will transfer ownership to your wallet address.")
+                  }}
+                 />
+              </h2>
               <form onSubmit={(event) => {
                 event.preventDefault()
                 const price = this.priceInput.value
@@ -35,7 +42,7 @@ class Main extends Component {
 
               <hr />
               <p>&nbsp;</p>
-              <label>Search by Owner: </label>
+              <label>Search by owner: </label>
               <input
                   type="submit"
                   id="SearchOwner"
